@@ -137,3 +137,12 @@ const siteContent = {
 // footer
   // p
     mainContentP[8].textContent = siteContent.footer.copyright;
+
+
+    // Stretch 
+    const paragraphStyle = document.querySelectorAll('p');
+    paragraphStyle.forEach(element => {
+      element.style.color = 'green';
+      element.style.fontSize = '1rem';
+      element.style.marginTop = "20px"
+    });
