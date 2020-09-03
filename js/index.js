@@ -40,7 +40,7 @@ const siteContent = {
 // Adding the nav bar
   // make anchor tags array like
     const navBar = document.getElementsByTagName('a');
-    console.log(navBar);
+
   // adding text content to the anchor tags
     navBar[0].textContent = siteContent.nav["nav-item-1"];
     navBar[1].textContent = siteContent.nav["nav-item-2"];
@@ -48,6 +48,14 @@ const siteContent = {
     navBar[3].textContent = siteContent.nav["nav-item-4"];
     navBar[4].textContent = siteContent.nav["nav-item-5"];
     navBar[5].textContent = siteContent.nav["nav-item-6"];
+ 
   // adding logo to nav
-  
+    // logo img var
+      const logoImg = document.querySelector('#logo-img');
+      console.log(logoImg);
+    // adding src
+      logoImg.src = siteContent.nav["img-src"];
+
+
+
 
