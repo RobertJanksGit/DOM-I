@@ -89,3 +89,32 @@ const siteContent = {
     // img
       const middleImg = document.querySelector('.middle-img');
       middleImg.src = siteContent["main-content"]["middle-img-src"];
+
+  // bottom content
+    // left side
+      // h4
+        mainContentH4[2].textContent = siteContent["main-content"]["services-h4"];
+      // p
+        mainContentP[2].textContent = siteContent["main-content"]["services-content"];
+    // middle
+      // h4
+        mainContentH4[3].textContent = siteContent["main-content"]["product-h4"];
+      // p
+        mainContentP[3].textContent = siteContent["main-content"]["product-content"];
+    // right side
+      // h4
+        mainContentH4[4].textContent = siteContent["main-content"]["services-h4"];
+      // p
+        mainContentP[4].textContent = siteContent["main-content"]["services-content"];
+
+// contact section
+  // h4
+    mainContentH4[5].textContent = siteContent.contact["contact-h4"];
+  // p
+    mainContentP[5].textContent = siteContent.contact.address;
+    mainContentP[6].textContent = siteContent.contact.phone;
+    mainContentP[7].textContent = siteContent.contact.email;
+
+// footer
+  // p
+    mainContentP[8].textContent = siteContent.footer.copyright;
