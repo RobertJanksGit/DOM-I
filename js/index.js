@@ -37,6 +37,17 @@ const siteContent = {
   },
 };
 
-// Example: Update the img src for the logo
-let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+// Adding the nav bar
+  // make anchor tags array like
+    const navBar = document.getElementsByTagName('a');
+    console.log(navBar);
+  // adding text content to the anchor tags
+    navBar[0].textContent = siteContent.nav["nav-item-1"];
+    navBar[1].textContent = siteContent.nav["nav-item-2"];
+    navBar[2].textContent = siteContent.nav["nav-item-3"];
+    navBar[3].textContent = siteContent.nav["nav-item-4"];
+    navBar[4].textContent = siteContent.nav["nav-item-5"];
+    navBar[5].textContent = siteContent.nav["nav-item-6"];
+  // adding logo to nav
+  
+
