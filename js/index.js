@@ -48,15 +48,26 @@ const siteContent = {
     navBar[3].textContent = siteContent.nav["nav-item-4"];
     navBar[4].textContent = siteContent.nav["nav-item-5"];
     navBar[5].textContent = siteContent.nav["nav-item-6"];
- 
+
+ // adding new buttons to nav
+    //prepend button 
+      const newNav1 = document.createElement('a');
+      newNav1.textContent = 'New Nav 1';
+      const nav = document.querySelector('nav');
+      nav.prepend(newNav1);
+
+    // append button
+      const newNav2 = document.createElement('a');
+      newNav2.textContent = 'New Nav 2';
+      nav.appendChild(newNav2);
+      
   // Changing text to green
     const navTextColor = document.querySelectorAll('a');
     navTextColor.forEach(element => {
       element.style.color = 'green';
     });
 
-  // adding new buttons to nav
-    
+  
 
   // adding logo to nav
     // logo img var
@@ -81,9 +92,8 @@ const siteContent = {
 // main content
   // making the h4 and p tags into array like variable
     const mainContentH4 = document.getElementsByTagName('h4');
-    console.log(mainContentH4);
     const mainContentP = document.getElementsByTagName('p');
-    console.log(mainContentP);
+    
   // top content
     // left side
       // h4
