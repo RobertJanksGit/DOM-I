@@ -49,6 +49,15 @@ const siteContent = {
     navBar[4].textContent = siteContent.nav["nav-item-5"];
     navBar[5].textContent = siteContent.nav["nav-item-6"];
  
+  // Changing text to green
+    const navTextColor = document.querySelectorAll('a');
+    navTextColor.forEach(element => {
+      element.style.color = 'green';
+    });
+
+  // adding new buttons to nav
+    
+
   // adding logo to nav
     // logo img var
       const logoImg = document.querySelector('#logo-img');
@@ -66,7 +75,7 @@ const siteContent = {
     ctaButton.textContent = siteContent.cta.button;
 
   // cta img
-    const ctaImg = document.querySelector('.cta img');
+    const ctaImg = document.querySelector('#cta-img');
     ctaImg.src = siteContent.cta["img-src"];
 
 // main content
@@ -87,7 +96,7 @@ const siteContent = {
       // p
         mainContentP[1].textContent = siteContent["main-content"]["about-content"];
     // img
-      const middleImg = document.querySelector('.middle-img');
+      const middleImg = document.querySelector('#middle-img');
       middleImg.src = siteContent["main-content"]["middle-img-src"];
 
   // bottom content
