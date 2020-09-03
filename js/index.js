@@ -38,7 +38,7 @@ const siteContent = {
 };
 
 // Adding the nav bar
-  // make anchor tags array like
+  // make anchor tags array like variable
     const navBar = document.getElementsByTagName('a');
 
   // adding text content to the anchor tags
@@ -52,10 +52,40 @@ const siteContent = {
   // adding logo to nav
     // logo img var
       const logoImg = document.querySelector('#logo-img');
-      console.log(logoImg);
+      
     // adding src
       logoImg.src = siteContent.nav["img-src"];
 
+// cta section
+  // cta h1
+    const ctaH1 = document.querySelector('.cta-text h1');
+    ctaH1.textContent = siteContent.cta.h1;
+  
+  // cta button
+    const ctaButton = document.querySelector('.cta-text button');
+    ctaButton.textContent = siteContent.cta.button;
 
+  // cta img
+    const ctaImg = document.querySelector('.cta img');
+    ctaImg.src = siteContent.cta["img-src"];
 
-
+// main content
+  // making the h4 and p tags into array like variable
+    const mainContentH4 = document.getElementsByTagName('h4');
+    console.log(mainContentH4);
+    const mainContentP = document.getElementsByTagName('p');
+    console.log(mainContentP);
+  // top content
+    // left side
+      // h4
+        mainContentH4[0].textContent = siteContent["main-content"]["features-h4"];
+      // p
+        mainContentP[0].textContent = siteContent["main-content"]["features-content"];
+    // right side
+      // h4
+        mainContentH4[1].textContent = siteContent["main-content"]["about-h4"];
+      // p
+        mainContentP[1].textContent = siteContent["main-content"]["about-content"];
+    // img
+      const middleImg = document.querySelector('.middle-img');
+      middleImg.src = siteContent["main-content"]["middle-img-src"];
